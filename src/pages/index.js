@@ -1,10 +1,10 @@
+import { NavigationBar } from "@/components/navbar";
 import React from "react";
-
 function index() {
   return (
     //Navbar component will be imported here
     <>
-      <div className="text-white">RX-Labs Company Profile</div>
+      <NavigationBar />
     </>
     //Footer component will be imported here
   );
