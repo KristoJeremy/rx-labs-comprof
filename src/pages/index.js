@@ -4,7 +4,7 @@ function index() {
   return (
     //Navbar component will be imported here
     <>
-      <div className="bg-black">RX-Labs Company Profile</div>
+      <div className="text-white">RX-Labs Company Profile</div>
     </>
     //Footer component will be imported here
   );
