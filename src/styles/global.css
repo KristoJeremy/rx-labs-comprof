@@ -4,4 +4,5 @@
 
 body {
   background-color: #292550;
+  overflow-x: hidden;
 }

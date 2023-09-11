@@ -1,12 +1,21 @@
 import React from "react";
 
+///COMPONENT
+import { ServiceModal } from "@/components/serviceModal";
+import { Background } from "@/components/background";
+
 function index() {
   return (
-    //Navbar component will be imported here
     <>
-      <div className="text-white">RX-Labs Company Profile</div>
+      <div>
+        <Background />
+      </div>
+      {/* COMPONENT START */}
+      <div>
+        <ServiceModal />
+      </div>
+      {/* COMPONENT END */}
     </>
-    //Footer component will be imported here
   );
 }
 

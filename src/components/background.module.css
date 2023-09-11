@@ -1,0 +1,49 @@
+.circle_1 {
+  width: 720px;
+  height: 720px;
+  background: #938cba;
+  top: -150px;
+  left: -150px;
+  position: absolute;
+  filter: blur(200px);
+}
+
+.circle_2 {
+  width: 720px;
+  height: 720px;
+  background: #641c9c;
+  top: 650px;
+  right: -188px;
+  position: absolute;
+  filter: blur(200px);
+}
+
+.circle_3 {
+  width: 720px;
+  height: 720px;
+  background: #da1d9a;
+  top: 1409px;
+  left: -223px;
+  position: absolute;
+  filter: blur(200px);
+}
+
+.circle_4 {
+  width: 720px;
+  height: 720px;
+  background: #d95da0;
+  top: 2260px;
+  right: -109px;
+  position: absolute;
+  filter: blur(200px);
+}
+
+.circle_5 {
+  width: 720px;
+  height: 720px;
+  background: #641c9c;
+  top: 3188px;
+  left: -37px;
+  position: absolute;
+  filter: blur(200px);
+}
