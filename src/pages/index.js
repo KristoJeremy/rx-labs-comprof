@@ -1,4 +1,4 @@
-import { NavigationBar } from "@/components/navbar";
+import { NavigationBar } from "@/components/Navbar/navbar";
 import React from "react";
 function index() {
   return (

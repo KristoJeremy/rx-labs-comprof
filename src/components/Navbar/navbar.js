@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import styles from "../styles/navbar.module.css";
+import styles from "./navbar.module.css";
 
 export const NavigationBar = () => {
     const pathname = usePathname();
