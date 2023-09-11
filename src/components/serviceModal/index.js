@@ -5,7 +5,7 @@ import Image from "next/image";
 import { LatoReguler, PoppinsBold, PoppinsMedium } from "@/fonts/font";
 import styles from "./serviceModal.module.css";
 
-import pic1 from "../../public/_service/web_dev.png";
+import pic1 from "../../../public/_service/web_dev.png";
 
 export const ServiceModal = (props) => {
   return (

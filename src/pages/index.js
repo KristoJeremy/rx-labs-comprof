@@ -2,7 +2,7 @@ import React from "react";
 
 ///COMPONENT
 import { ServiceModal } from "@/components/serviceModal";
-import { Background } from "@/components/background";
+import { Background } from "@/components/backgroundBlur";
 
 function index() {
   return (
