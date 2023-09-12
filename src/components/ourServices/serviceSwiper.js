@@ -16,9 +16,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Import assets
-import pic1 from "../../public/_service/web_dev.png";
-import pic2 from "../../public/_service/ui_ux.png";
-import pic3 from "../../public/_service/Social_Media.png";
+import pic1 from "../../../public/_service/web_dev.png";
+import pic2 from "../../../public/_service/ui_ux.png";
+import pic3 from "../../../public/_service/Social_Media.png";
 
 function CreateModal() {
   const data = [
@@ -93,7 +93,7 @@ export const ServiceSwiper = () => {
   return (
     <>
       <Swiper
-        slidesPerView={"auto"} //Harusnya slidesPerView={"auto"}
+        slidesPerView={"2"} //Harusnya slidesPerView={"auto"}
         centeredSlides={true}
         spaceBetween={5}
         // pagination={{

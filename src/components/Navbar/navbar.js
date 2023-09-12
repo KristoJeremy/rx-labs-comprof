@@ -13,9 +13,7 @@ export const NavigationBar = () => {
   return (
     <section id="Navbar">
       <nav
-        className={`py-5 md:bg-[#292550] ${
-          navbar ? "bg-[#292550]" : "bg-[#292550]"
-        } transition-colors duration-500`}
+        className={`${styles.nav_container} py-5 transition-colors duration-500`}
       >
         <div className={styles.box}>
           <div className={styles.boxwrap}>
