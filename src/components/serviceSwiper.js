@@ -1,30 +1,113 @@
 import React from "react";
+import Image from "next/image";
 
-///ASSETS
+// Import font and css
+import { LatoReguler, PoppinsBold, PoppinsMedium } from "@/fonts/font";
+import styles from "./serviceSwiper.module.css";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import required modules
+import { Pagination, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// Import assets
 import pic1 from "../../public/_service/web_dev.png";
 import pic2 from "../../public/_service/ui_ux.png";
 import pic3 from "../../public/_service/Social_Media.png";
 
-export const CreateModal = () => {
+function CreateModal() {
   const data = [
     {
       url: pic1,
-      alt: "Pipe Cigar & Vapes Tobacconist collection showcase 1",
-      title: "Blades and Beauty",
-      desc: "Immerse yourself in the world of artistic transformation as everyday objects are elevated to artistry. A collection of knives finds its place on a table, seamlessly fusing craftsmanship with functionality. Amid them, one knife shines with an ergonomic handle and precise design, revealing its intricate blade upon closer inspection. Nearby, a gold and black pen case emanates elegance, while a delicate bell evokes a touch of nostalgia. Unexpectedly, a close-up of a bird's head highlights the artistic undercurrent in life's simplest forms. This exhibit reveres the blend of purpose and aesthetics, beckoning you to recognize the artistry within the ordinary.",
+      desc: "In web development, we masterfully utilize open-source platforms to create cost-effective, customized solutions. Our process starts with precise project analysis, aligning every detail with your vision. We're committed to delivering exceptional value by optimizing both affordability and functionality, making us your strategic partner for an efficient online presence.",
+      title: "Web Development",
+      alt: "Desktop screen showing codes",
     },
     {
       url: pic2,
-      name: "Pipe Cigar & Vapes Tobacconist collection showcase 2",
-      title: "The Elegance of Parasols and Canes",
-      desc: "Immerse yourself in a world of refined charm as our Gallery Showcase unveils the captivating allure of Umbrellas and Walking Sticks. From the display of intricately designed umbrellas to the dignified presence of finely crafted walking sticks, this collection harkens to an era where elegance walked hand in hand with functionality. The umbrellas' vibrant array invites admiration, each piece a testament to the marriage of form and shelter. Meanwhile, the walking sticks stand as symbols of sophistication, their handles carved with stories waiting to be told. Join us in celebrating the enduring appeal of these classic accessories, where each item captures the essence of a bygone era and whispers of the grace that transcends time.",
+      desc: "In the realm of UI/UX design for prototypes, we offer a comprehensive suite of services. Our process starts with a deep understanding of your project's goals and audience. We create interactive wireframes and mockups, conduct user research and testing, and ensure responsive design. We equip you with a compelling prototype and presentation resources for project support and success.",
+      title: "UI/UX Design",
+      alt: "Wireframing",
     },
     {
       url: pic3,
-      name: "Pipe Cigar & Vapes Tobacconist collection showcase 3",
-      title: "The Artistry of the Cigar Lighter",
-      desc: "Discover the epitome of elegance with our showcased Cigar Lighter—an embodiment of sophistication and precision. Encased within glass, the lighter stands as a testament to craftsmanship. Its gleaming surface reflects a timeless allure, while its ergonomic design promises both form and function. This masterpiece of engineering takes center stage as a symbol of refined taste. With its precise mechanism and luxurious aesthetic, the Cigar Lighter offers a seamless union of elegance and utility, inviting aficionados and connoisseurs alike to experience the artistry of igniting moments of pleasure.",
+      desc: "Our social media management services are dedicated to enhancing engagement, expanding reach, and providing insightful reporting for your business. We start by understanding your goals and audience, then craft compelling content to boost engagement and track progress with detailed reports.",
+      title: "Social Media Management",
+      alt: "Smartphone home screen",
     },
   ];
-  return <div></div>;
+  return (
+    <>
+      {data.map((data, index) => (
+        <SwiperSlide key={index} className={`md:py-6 py-4`}>
+          <div
+            id="card"
+            className={`${styles.card_size} ${styles.glassmorphism}`}
+          >
+            <div className="grid grid-cols-3 max-h-full">
+              <div className="col-span-1">
+                <Image
+                  src={data.url}
+                  className={`${styles.image}`}
+                  alt={data.alt}
+                />
+              </div>
+              <div className="col-span-2 md:p-6 p-4 flex flex-col">
+                <div
+                  className={`${styles.title} text-[#f6f1f1] md:mt-[95px] mt-15px grow`}
+                  style={PoppinsBold.style}
+                >
+                  {data.title}
+                </div>
+                <div
+                  className={`${styles.desc}  grow`}
+                  style={LatoReguler.style}
+                >
+                  {data.desc}
+                </div>
+                <div className="md:mt-[70px] mt-[5px] grow">
+                  <button
+                    aria-label="Read more"
+                    type="button"
+                    className={`${styles.bt_tx} rounded-3xl md:px-[22px] px-[10px] md:py-2 py-1 text-center border-[1px]`}
+                    style={PoppinsMedium.style}
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </>
+  );
+}
+
+export const ServiceSwiper = () => {
+  return (
+    <>
+      <Swiper
+        slidesPerView={"auto"} //Harusnya slidesPerView={"auto"}
+        centeredSlides={true}
+        spaceBetween={5}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className={`mySwiper`}
+      >
+        {CreateModal()}
+      </Swiper>
+    </>
+  );
 };

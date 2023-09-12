@@ -1,9 +1,8 @@
 import React from "react";
 
 ///COMPONENT
-import { ServiceModal } from "@/components/serviceModal";
 import { Background } from "@/components/background";
-
+import { OurService } from "@/components/ourService";
 function index() {
   return (
     <>
@@ -12,7 +11,7 @@ function index() {
       </div>
       {/* COMPONENT START */}
       <div>
-        <ServiceModal />
+        <OurService />
       </div>
       {/* COMPONENT END */}
     </>
