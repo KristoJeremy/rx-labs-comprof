@@ -3,7 +3,7 @@ import React from "react";
 
 ///COMPONENT
 import { Background } from "@/components/backgroundBlur";
-import { OurService } from "@/components/ourService";
+import { OurService } from "@/components/ourServices";
 function index() {
   return (
     <>
