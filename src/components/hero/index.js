@@ -30,7 +30,7 @@ export const Hero = () => {
                 className={`${styles.title_line2} text-center text-white p-0 display:inline`}
                 style={PoppinsBold.style}
               >
-                MAKING TECH &nbsp;
+                MAKING TECH&nbsp;
               </span>
               <span
                 className={`${styles.title_line3} text-center text-white p-0 display:inline `}
