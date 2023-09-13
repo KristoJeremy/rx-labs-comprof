@@ -5,7 +5,8 @@
   top: -150px;
   left: -150px;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(210px);
+  z-index: -10000;
 }
 
 .circle_2 {
@@ -15,7 +16,8 @@
   top: 650px;
   right: -188px;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(210px);
+  z-index: -10000;
 }
 
 .circle_3 {
@@ -25,7 +27,8 @@
   top: 1409px;
   left: -223px;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(210px);
+  z-index: -10000;
 }
 
 .circle_4 {
@@ -35,7 +38,8 @@
   top: 2260px;
   right: -109px;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(210px);
+  z-index: -10000;
 }
 
 .circle_5 {
@@ -45,5 +49,43 @@
   top: 3188px;
   left: -37px;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(210px);
+  z-index: -10000;
+}
+
+@media (max-width: 639px) {
+  .circle_1 {
+    width: 359px;
+    height: 359px;
+    top: -127px;
+    left: -107px;
+  }
+
+  .circle_2 {
+    width: 319px;
+    height: 319px;
+    top: 276px;
+    right: -69px;
+  }
+
+  .circle_3 {
+    width: 436px;
+    height: 436px;
+    top: 562px;
+    left: -153px;
+  }
+
+  .circle_4 {
+    width: 391px;
+    height: 391px;
+    top: 1356px;
+    right: -173px;
+  }
+
+  .circle_5 {
+    width: 353px;
+    height: 353px;
+    top: 2113px;
+    left: -150px;
+  }
 }
