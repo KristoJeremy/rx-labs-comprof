@@ -1,0 +1,50 @@
+.menu_tx {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+}
+
+@media (max-width: 994px) {
+  .menu_tx {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  .copyright {
+    font-size: 10px;
+    line-height: normal;
+    text-align: right;
+  }
+}
+
+@media (max-width: 849px) {
+  .menu_tx {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .copyright {
+    font-size: 8px;
+    line-height: normal;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu_tx {
+    font-size: 8px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: 8px;
+    line-height: normal;
+    text-align: center;
+  }
+}

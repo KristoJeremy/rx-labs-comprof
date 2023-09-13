@@ -5,6 +5,7 @@ import { NavigationBar } from "@/components/Navbar/navbar";
 import { Background } from "@/components/backgroundBlur";
 import { OurService } from "@/components/ourServices";
 import { Hero } from "@/components/hero";
+import { Footer } from "@/components/footer";
 
 function index() {
   return (
@@ -22,6 +23,10 @@ function index() {
       <div>
         <OurService />
       </div>
+      <div className="">
+        <Footer />
+      </div>
+
       {/* COMPONENT END */}
     </>
   );
