@@ -1,7 +1,30 @@
+
+.navList {
+  left: 0;
+}
 .nav_container {
   position: absolute;
   z-index: 10000;
 }
+.navItem {
+  color: #ebe1e6; /* Default text color */
+  font-size: 14px; /* Font size */
+  /* Add any other styles you want for the navigation items */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navItem:hover {
+  color: #b469c0; /* Text color on hover */
+}
+
+.mobileMenu {
+  display: none; 
+}
+
+.showMenu {
+  display: block;
+}
+
 .icon-logo-instagram {
   height: 20px;
   left: 1180px;
@@ -106,17 +129,14 @@
   width: 1202px;
 }
 .wrapper {
-  color: #f7f7f7;
-  font-family: "Poppins-Bold", Helvetica;
-  font-size: 18px;
-  font-weight: 700;
-  left: 1;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: -0.5;
-}
-
+    color: #f7f7f7;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 1;
+    letter-spacing: 0;
+    top: -0.5;
+    }
 .img_logo {
   width: 280px;
 }

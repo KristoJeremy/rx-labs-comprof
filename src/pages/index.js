@@ -9,6 +9,11 @@ import { Hero } from "@/components/hero";
 function index() {
   return (
     <>
+      <div className="sticky top-0">
+        <NavigationBar />
+      </div>
+      {/* <UpperSec /> */}
+
       <div className="">
         <NavigationBar />
       </div>
@@ -23,6 +28,7 @@ function index() {
         <OurService />
       </div>
       {/* COMPONENT END */}
+
     </>
   );
 }
