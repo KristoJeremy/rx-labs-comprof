@@ -21,11 +21,9 @@ export const PoppinsBold = Poppins({
 export const LatoReguler = Lato({
   subsets: ["latin"],
   weight: "400",
-  display: "swap",
 });
 
 export const LatoBold = Lato({
   subsets: ["latin"],
   weight: "700",
-  display: "swap",
 });
