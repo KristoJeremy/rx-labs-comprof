@@ -11,15 +11,19 @@ function index() {
       <div className="">
         <NavigationBar />
       </div>
+
       <div>
         <Background />
       </div>
       {/* COMPONENT START */}
-      <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
+      {/* <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
         <Hero />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <OurService />
+      </div>
+      <div className="">
+        <Footer />
       </div>
       {/* COMPONENT END */}
     </>

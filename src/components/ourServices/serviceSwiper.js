@@ -6,20 +6,19 @@ import { LatoReguler, PoppinsBold, PoppinsMedium } from "@/fonts/font";
 import styles from "./serviceSwiper.module.css";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+// import { Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 
 // Import assets
-import pic1 from "../../../public/_service/web_dev.png";
-import pic2 from "../../../public/_service/ui_ux.png";
-import pic3 from "../../../public/_service/Social_Media.png";
-
+// import pic1 from "../../../public/_service/web_dev.png";
+// import pic2 from "../../../public/_service/ui_ux.png";
+// import pic3 from "../../../public/_service/Social_Media.png";
 function CreateModal() {
   const data = [
     {

@@ -1,3 +1,28 @@
+.navList {
+  left: 12;
+}
+.nav_container {
+  z-index: 10000;
+}
+.navItem {
+  color: #ebe1e6; /* Default text color */
+  font-size: 14px; /* Font size */
+  /* Add any other styles you want for the navigation items */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navItem:hover {
+  color: #b469c0; /* Text color on hover */
+}
+
+.mobileMenu {
+  display: none; 
+}
+
+.showMenu {
+  display: block;
+}
+
 .icon-logo-instagram {
   height: 20px;
   left: 1180px;
