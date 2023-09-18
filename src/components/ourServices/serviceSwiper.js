@@ -44,7 +44,10 @@ function CreateModal() {
   return (
     <>
       {data.map((data, index) => (
-        <SwiperSlide key={index} className={`md:py-6 py-4`}>
+        <SwiperSlide
+          key={index}
+          className={`${styles.swiper_slide} md:py-6 py-4`}
+        >
           <div
             id="card"
             className={`${styles.card_size} ${styles.glassmorphism}`}
@@ -59,7 +62,7 @@ function CreateModal() {
               </div>
               <div className="col-span-2 md:p-6 p-4 flex flex-col">
                 <div
-                  className={`${styles.title} text-[#f6f1f1] md:mt-[95px] mt-15px grow`}
+                  className={`${styles.title} text-[#f6f1f1] lg:mt-[95px] md:mt-[50px] sm:mt-[30px] mt-[25px] grow`}
                   style={PoppinsBold.style}
                 >
                   {data.title}
@@ -71,14 +74,14 @@ function CreateModal() {
                   {data.desc}
                 </div>
                 <div className="md:mt-[70px] mt-[5px] grow">
-                  <button
+                  {/* <button
                     aria-label="Read more"
                     type="button"
                     className={`${styles.bt_tx} rounded-3xl md:px-[22px] px-[10px] md:py-2 py-1 text-center border-[1px]`}
                     style={PoppinsMedium.style}
                   >
                     Read More
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -93,9 +96,10 @@ export const ServiceSwiper = () => {
   return (
     <>
       <Swiper
-        slidesPerView={"2"} //Harusnya slidesPerView={"auto"}
+        slidesPerView={"auto"} //Harusnya slidesPerView={"auto"}
+        // width={720}
         centeredSlides={true}
-        spaceBetween={5}
+        spaceBetween={30}
         // pagination={{
         //   clickable: true,
         // }}
@@ -103,7 +107,7 @@ export const ServiceSwiper = () => {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay]}
+        modules={[]}
         className={`mySwiper`}
       >
         {CreateModal()}
