@@ -14,7 +14,9 @@ export const NavigationBar = () => {
   return (
     <section id="Navbar" className={styles.navbar}>
       <nav
-        className={`md:absolute py-5 transition-colors duration-500`}
+        className={`md:absolute py-5 transition-colors duration-500  ${
+          navbar ? "background-color: transparent" : "background-color: transparent"
+        } transition-colors duration-500`}
       >
         <div className="container md:px-12 md:flex md:items-center md:justify-between lg:max-w-[1300px] md:mb-0 mb-[-5px]">
           <div className="flex items-center justify-between">
@@ -47,7 +49,7 @@ export const NavigationBar = () => {
             <ul
               className={`md:flex md:items-center pb-10 mt-2 md:pb-0 md:mt-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:transition-none transition-all duration-500 ease-in md:border-0 border-b-[3.5px] border-[#151515] ${
                 navbar
-                  ? "top-[-10px] md:right-0 md:bg-[#292550] bg-[#292550] justify-between"
+                  ? "top-[-10px] md:right-0 bg-[#292550] justify-between lg:bg-transparent"
                   : "top-[-490px]"
               } navList`}
               style={{
