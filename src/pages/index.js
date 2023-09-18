@@ -10,17 +10,18 @@ import { Footer } from "@/components/footer";
 function index() {
   return (
     <>
-      <div className="">
+      <div className="sticky top-0">
         <NavigationBar />
       </div>
+      {/* <UpperSec /> */}
       <div>
         <Background />
       </div>
       {/* COMPONENT START */}
-      <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
+      {/* <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
         <Hero />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <OurService />
       </div>
       <div className="">
