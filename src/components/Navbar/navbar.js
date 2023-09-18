@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PoppinsBold, PoppinsSemiBold } from "@/fonts/font";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -14,7 +13,9 @@ export const NavigationBar = () => {
   return (
     <section id="Navbar" className={styles.navbar}>
       <nav
-        className={`${styles.nav_container} py-5 transition-colors duration-500`}
+        className={`md:absolute py-5 transition-colors duration-500  ${
+          navbar ? "background-color: transparent" : "background-color: transparent"
+        } transition-colors duration-500`}
       >
         <div className="container md:px-12 md:flex md:items-center md:justify-between lg:max-w-[1300px] md:mb-0 mb-[-5px]">
           <div className="flex items-center justify-between">
@@ -33,7 +34,9 @@ export const NavigationBar = () => {
               ) : (
                 <button
                   aria-label="drawer icon"
-                  className="p-2 rounded-md "
+                  className={`p-2 rounded-md ${
+                    navbar ? "md:hidden right-0" : "md:block"
+                  }`}
                   onClick={() => setNavbar(!navbar)}
                 >
                   <MenuIcon style={{ color: "#ebe1e6" }} />
@@ -45,12 +48,13 @@ export const NavigationBar = () => {
             <ul
               className={`md:flex md:items-center pb-10 mt-2 md:pb-0 md:mt-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:transition-none transition-all duration-500 ease-in md:border-0 border-b-[3.5px] border-[#151515] ${
                 navbar
-                  ? "top-[-10px] md:bg-[#292550] bg-[#292550]"
+                  ? "top-[-10px] md:right-0 bg-[#292550] justify-between lg:bg-transparent"
                   : "top-[-490px]"
               } navList`}
               style={{
-                paddingLeft: 0, // Remove left padding
-                marginLeft: 0,  // Remove left margin
+                paddingLeft: 1,
+                marginLeft: 1,
+                right: navbar ? "0" : "-100%" 
               } }
             >
               <li className="pb-0 text-xl px-6 text-center md:mt-0 mt-[100px]" style={{ color: '#ebe1e6', fontSize: '14px', marginLeft: 0 }}>
