@@ -1,97 +1,96 @@
 .title {
-    font-size: 42px;
-    margin-top: 30px;
-  }
-
-.forms{
-    margin-top: 40px;
+  font-size: 42px;
+  margin-top: 30px;
 }
-  
+
+.forms {
+  margin-top: 40px;
+}
+
+.description {
+  color: #f6f4f5;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.font_label {
+  font-size: 14px;
+}
+
+.font_input {
+  font-size: 16px;
+}
+
+.button {
+  /* all: unset; */
+  background-color: #9f7c7c;
+  border-radius: 30px;
+  box-sizing: border-box;
+  height: 43px;
+  position: relative;
+  width: 143px;
+}
+
+.wrapper {
+  color: #e9dfdf;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 3.2rem;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: justify;
+  top: 14px;
+}
+
+.errorMsg {
+  font-size: 14px;
+  line-height: 16px;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .title {
+    font-size: 32px;
+  }
+
   .description {
-color: #f6f4f5;
-font-family: "Poppins-Bold", Helvetica;
-font-size: 40px;
-font-weight: 700;
-left: 0;
-letter-spacing: 0;
-line-height: normal;
-position: absolute;
-top: 0;
+    font-size: 15px;
   }
-  
+
   .font_label {
-    font-size: 14px;
+    font-size: 12px;
   }
-  
+
   .font_input {
-    font-size: 16px;
+    font-size: 14px;
   }
-  
+
   .button {
-    /* all: unset; */
-    background-color: #9f7c7c;
-    border-radius: 30px;
-    box-sizing: border-box;
-    height: 43px;
-    position: relative;
-    width: 143px;
-  }
-
-  .wrapper {
-    color: #e9dfdf;
-    font-family: "Poppins-Medium", Helvetica;
     font-size: 14px;
-    font-weight: 500;
-    left: 26px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: justify;
-    top: 14px;
-    }
+  }
+}
 
+@media (max-width: 640px) {
+  .title {
+    font-size: 28px;
+  }
+  .description {
+    font-size: 14px;
+  }
   .errorMsg {
-    font-size: 14px;
-    line-height: 16px;
-    display: none;
+    font-size: 11px;
+    line-height: 13px;
   }
-  
-  @media (max-width: 1023px) {
-    .title {
-      font-size: 32px;
-    }
-  
-    .description {
-      font-size: 15px;
-    }
-  
-    .font_label {
-      font-size: 12px;
-    }
-  
-    .font_input {
-      font-size: 14px;
-    }
-  
-    .button {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 640px) {
-    .title {
-      font-size: 28px;
-    }
-    .description {
-      font-size: 14px;
-    }
-    .errorMsg {
-      font-size: 11px;
-      line-height: 13px;
-    }
-  }
-  
-  /* input:invalid ~ .errorMsg {
-    display: block;
-  } */
-  
+}
+
+/* input:invalid ~ .errorMsg {
+  display: block;
+} */

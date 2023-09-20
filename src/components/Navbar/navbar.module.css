@@ -1,4 +1,3 @@
-
 .navList {
   left: 12;
 }
@@ -17,7 +16,7 @@
 }
 
 .mobileMenu {
-  display: none; 
+  display: none;
 }
 
 .showMenu {
@@ -128,14 +127,14 @@
   width: 1202px;
 }
 .wrapper {
-    color: #f7f7f7;
-    font-family: "Poppins-Bold", Helvetica;
-    font-size: 18px;
-    font-weight: 700;
-    left: 1;
-    letter-spacing: 0;
-    top: -0.5;
-    }
+  color: #f7f7f7;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 1;
+  letter-spacing: 0;
+  top: -0.5;
+}
 .img_logo {
   width: 280px;
 }
