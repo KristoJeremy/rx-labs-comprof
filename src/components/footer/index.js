@@ -7,7 +7,10 @@ import styles from "./footer.module.css";
 
 export const Footer = () => {
   return (
-    <section id="footer" className="py-5 md:mx-[120px] mx-auto">
+    <section
+      id="footer"
+      className="py-5 md:mx-[120px] mx-auto lg:mt-[248px] mt-[150px]"
+    >
       <div className="container grid md:grid-cols-2 md:grid-rows-none">
         <div className="inline-flex md:justify-start justify-center">
           <Link href="/">

@@ -16,7 +16,7 @@
 }
 
 .mobileMenu {
-  display: none; 
+  display: none;
 }
 
 .showMenu {
@@ -133,11 +133,8 @@
   font-weight: 700;
   left: 1;
   letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
   top: -0.5;
 }
-
 .img_logo {
   width: 280px;
 }
