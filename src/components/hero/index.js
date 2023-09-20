@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 // Import dependencies
 import { useTypewriter } from "react-simple-typewriter";
@@ -6,8 +7,37 @@ import { useTypewriter } from "react-simple-typewriter";
 // Import font and css
 import { PoppinsBold, LatoBold, PoppinsSemiBold } from "@/fonts/font";
 import styles from "./hero.module.css";
+// import { useEffect, useState } from "react";
+
+// const MenuItem = ({ itemName, active }) => {
+//   const [anchorTarget, setAnchorTarget] = useState(null);
+
+//   useEffect(() => {
+//     setAnchorTarget(document.getElementById(itemName));
+//   }, [itemName]);
+
+//   const handleClick = (event) => {
+//     event.preventDefault();
+//     anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+//   };
+// };
 
 export const Hero = () => {
+  const scroll2El = (elID) => {
+    window.scrollTo({
+      top: document.getElementById(elID).offsetTop - 60,
+      behavior: "smooth",
+    });
+  };
+
+  const onBtnClick = (e) => {
+    e.preventDefault();
+    const goto = e.target.getAttribute("goto");
+    setTimeout(() => {
+      scroll2El(goto);
+    }, 100);
+  };
+
   const [text] = useTypewriter({
     words: ["ACCESSIBLE"],
     loop: {},
@@ -41,9 +71,11 @@ export const Hero = () => {
             </div>
             <div className="mx-auto text-center lg:mt-[25px] md:mt-[20px] sm:mt-[15px] mt-[10px]">
               <button
+                goto="upper-section"
+                onClick={onBtnClick}
                 aria-label="Contact Us"
                 type="button"
-                className={`${styles.bt_tx} md:rounded-[40px] sm:rounded-[30px] rounded-[25px] md:px-[50px] px-[15px] md:py-[10px] sm:px-[30px] sm:py-[6px] py-1 text-center border-[1px]`}
+                className={`${styles.bt_tx} md:rounded-[40px] sm:rounded-[30px] rounded-[25px] md:px-[50px] px-[15px] md:py-[10px] sm:px-[30px] sm:py-[6px] py-1 text-center border-[1px] hover:bg-[#DA1D9A]`}
                 style={PoppinsSemiBold.style}
               >
                 Contact Us
