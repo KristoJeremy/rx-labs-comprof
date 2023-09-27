@@ -11,7 +11,7 @@ import { UpperSec } from "@/components/Contact-us/section";
 function index() {
   return (
     <>
-      <div className="sticky top-0 z-[20000]">
+      <div className="">
         <NavigationBar />
       </div>
 
