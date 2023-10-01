@@ -7,6 +7,7 @@ import { useTypewriter } from "react-simple-typewriter";
 // Import font and css
 import { PoppinsBold, LatoBold, PoppinsSemiBold } from "@/fonts/font";
 import styles from "./hero.module.css";
+import { onBtnClick } from "@/helper/scroll";
 // import { useEffect, useState } from "react";
 
 // const MenuItem = ({ itemName, active }) => {
@@ -23,21 +24,6 @@ import styles from "./hero.module.css";
 // };
 
 export const Hero = () => {
-  const scroll2El = (elID) => {
-    window.scrollTo({
-      top: document.getElementById(elID).offsetTop - 60,
-      behavior: "smooth",
-    });
-  };
-
-  const onBtnClick = (e) => {
-    e.preventDefault();
-    const goto = e.target.getAttribute("goto");
-    setTimeout(() => {
-      scroll2El(goto);
-    }, 100);
-  };
-
   const [text] = useTypewriter({
     words: ["ACCESSIBLE"],
     loop: {},

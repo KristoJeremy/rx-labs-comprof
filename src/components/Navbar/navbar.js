@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./navbar.module.css";
+import { onBtnClick } from "@/helper/scroll";
 
 export const NavigationBar = () => {
   const pathname = usePathname();
@@ -83,6 +84,8 @@ export const NavigationBar = () => {
               >
                 <Link href="/catalogue" onClick={() => setNavbar(!navbar)}>
                   <div
+                    onClick={onBtnClick}
+                    goto="our-service"
                     style={PoppinsSemiBold.style}
                     className={`${
                       pathname === "/catalogue" ? styles.menu : ""
