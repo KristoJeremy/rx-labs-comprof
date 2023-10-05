@@ -96,14 +96,14 @@ export const NavigationBar = () => {
                 className="pb-0 text-xl px-6 text-center"
                 style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
               >
-                <Link href="/gallery" onClick={() => setNavbar(!navbar)}>
+                <Link href="/Career" onClick={() => setNavbar(!navbar)}>
                   <div
                     style={PoppinsSemiBold.style}
-                    className={`${pathname === "/gallery" ? styles.menu : ""} ${
+                    className={`${pathname === "/Career" ? styles.menu : ""} ${
                       styles.menu_hover
                     } `}
                   >
-                    VALUES
+                    CAREER
                   </div>
                 </Link>
               </li>
