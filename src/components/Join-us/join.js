@@ -63,7 +63,7 @@ export const JoinUs = ()=> {
             </div>
             <div class="flex-1 w-full md:w-[calc(33.3333% - 1rem)]">
                 <div class="shadow-[3px_4px_4px_0px_#403845] bg-[rgba(66,_66,_70,_0.5)] flex flex-col gap-6 h-[300px] md:h-[313px] items-center pl-4 pr-4 py-6 rounded-lg">
-                    <div class="bg-[#e1ab20] flex flex-col w-10 h-10 shrink-0 justify-center pl-2 py-2 rounded-lg">
+                    <div class="bg-[#e1ab20] flex flex-col w-10 h-10 shrink-0 items-center pl-2 py-2 rounded-lg">
                         <img src="https://file.rendit.io/n/uWQIoAXSt0vRRvtQZiBm.svg" id="IconWork" class="w-6 mx-[-1] items-center"/>
                     </div>
                     <div class="text-center text-lg md:text-xl font-bold text-white">
