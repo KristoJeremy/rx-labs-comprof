@@ -19,12 +19,14 @@ function index() {
         <Background />
       </div>
 
-      <div className="z-0">
-        <JoinUs />
-      </div>
+
       {/* COMPONENT START */}
       <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
         <Hero />
+      </div>
+
+      <div className="z-0">
+        <JoinUs />
       </div>
 
       {/* COMPONENT END */}
