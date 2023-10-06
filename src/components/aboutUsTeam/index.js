@@ -26,7 +26,7 @@ export const AboutWorking = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[8vh]">
+      <div className="md:mt-[8vh] sm:mt-[5vh] mt-[3vh]">
         <AboutUsSwiper />
       </div>
     </section>
