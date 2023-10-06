@@ -103,7 +103,7 @@ export const NavigationBar = () => {
                       styles.menu_hover
                     } `}
                   >
-                    VALUES
+                    CAREER
                   </div>
                 </Link>
               </li>
