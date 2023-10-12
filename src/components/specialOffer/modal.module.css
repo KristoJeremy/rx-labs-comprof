@@ -1,0 +1,111 @@
+.card {
+  width: 996px;
+  height: 530px;
+  background-color: #513f4f;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.message {
+  font-size: 22px;
+}
+
+.bt_tx {
+  font-size: 18px;
+  color: #f6f4f5;
+}
+
+@media (max-width: 1023px) {
+  .card {
+    width: 700px;
+    height: 372px;
+    background-color: #513f4f;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .message {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .bt_tx {
+    font-size: 16px;
+    color: #f6f4f5;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 500px;
+    height: 266px;
+    background-color: #513f4f;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .message {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .bt_tx {
+    font-size: 11px;
+    color: #f6f4f5;
+  }
+}
+
+@media (max-width: 639px) {
+  .card {
+    width: 300px;
+    height: 280px;
+    background-color: #513f4f;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .message {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .bt_tx {
+    font-size: 10px;
+    color: #f6f4f5;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 250px;
+    height: 270px;
+    background-color: #513f4f;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+
+  .message {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .bt_tx {
+    font-size: 8px;
+    color: #f6f4f5;
+  }
+}

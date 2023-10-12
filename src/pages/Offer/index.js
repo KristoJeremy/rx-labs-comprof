@@ -1,14 +1,27 @@
 import React from "react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 //Import components
 import { NavigationBar } from "@/components/Navbar/navbar";
 import { Background } from "@/components/backgroundBlur";
 import { Hero } from "@/components/heroOffer";
 import { Footer } from "@/components/footer";
+import { SpecialOffer } from "@/components/specialOffer";
 
 function index() {
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#ffffff",
+      },
+    },
+  });
+
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <div className="absolute top-0 z-[52]">
+        <SpecialOffer />
+      </div>
       <div className="">
         <NavigationBar />
       </div>
@@ -23,9 +36,7 @@ function index() {
       <div className="">
         <Footer />
       </div>
-
-      {/* COMPONENT END */}
-    </>
+    </ThemeProvider>
   );
 }
 
