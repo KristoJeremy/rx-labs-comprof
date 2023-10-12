@@ -6,6 +6,8 @@ import { Background } from "@/components/backgroundBlur";
 import { JoinUs } from "@/components/Join-us/join";
 // import { Hero } from "@/components/heroCareer";
 import { Hero } from "@/components/heroCareer";
+import { AnimationCard } from "@/components/animationCard/animationCard";
+
 
 
 function index() {
@@ -27,6 +29,9 @@ function index() {
 
       <div className="z-0">
         <JoinUs />
+      </div>
+      <div className="z-0">
+        <AnimationCard />
       </div>
 
       {/* COMPONENT END */}
