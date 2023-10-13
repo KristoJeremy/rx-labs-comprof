@@ -25,9 +25,9 @@ function index() {
       <div>
         <OurService />
       </div>
-      <div className="mt-[10vh]">
+      {/* <div className="mt-[10vh]">
         <UpperSec />
-      </div>
+      </div> */}
       <div className="">
         <Footer />
       </div>

@@ -14,14 +14,14 @@ export const NavigationBar = () => {
   return (
     <section id="Navbar" className={styles.navbar}>
       <nav
-        className={`md:absolute py-5 transition-colors duration-500  ${
+        className={`md:absolute py-5 transition-colors duration-500 ${
           navbar
-            ? "background-color: transparent"
+            ? "background-color: transparent backdrop-blur-lg  "
             : "background-color: transparent"
         } transition-colors duration-500`}
       >
         <div className="container md:px-12 md:flex md:items-center md:justify-between lg:max-w-[1300px] md:mb-0 mb-[-5px]">
-          <div className="flex items-center justify-between md:mx-5">
+          <div className="flex items-center justify-between md:mx-5 px-4 ">
             <div
               className={`${styles.wrapper} lg:mx-5`}
               style={PoppinsBold.style}
@@ -82,13 +82,13 @@ export const NavigationBar = () => {
                 className="pb-0 text-xl px-6 text-center"
                 style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
               >
-                <Link href="/catalogue" onClick={() => setNavbar(!navbar)}>
+                <Link href="/services" onClick={() => setNavbar(!navbar)}>
                   <div
                     onClick={onBtnClick}
                     goto="our-service"
                     style={PoppinsSemiBold.style}
                     className={`${
-                      pathname === "/catalogue" ? styles.menu : ""
+                      pathname === "/services" ? styles.menu : ""
                     } ${styles.menu_hover} `}
                   >
                     SERVICES

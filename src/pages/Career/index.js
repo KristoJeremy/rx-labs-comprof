@@ -3,19 +3,26 @@ import React from "react";
 //Import components
 import { NavigationBar } from "@/components/Navbar/navbar";
 import { Background } from "@/components/backgroundBlur";
+import { JoinUs } from "@/components/Join-us/join";
+// import { Hero } from "@/components/heroCareer";
 import { Hero } from "@/components/heroCareer";
 import { Footer } from "@/components/footer";
 import { AboutWorking } from "@/components/aboutUsTeam";
 
+
 function index() {
   return (
     <>
-      <div className="">
+      <div className="z-50">
         <NavigationBar />
       </div>
 
       <div>
         <Background />
+      </div>
+
+      <div className="z-0">
+        <JoinUs />
       </div>
       {/* COMPONENT START */}
       <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
@@ -37,5 +44,4 @@ function index() {
     </>
   );
 }
-
 export default index;
