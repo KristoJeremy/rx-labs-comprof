@@ -1,10 +1,10 @@
 .box {
   background-color: #61455e;
-  box-shadow: 3rem 4rem 20rem #00000040;
+  /* box-shadow: 3rem 4rem 20rem #00000040;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 70vh; */
 }
 
 .title {
