@@ -6,12 +6,14 @@ import {
   PoppinsBold,
 } from "@/fonts/font";
 import styles from "./form.module.css";
+import img1 from "../../../public/laptop.png";
+import Image from "next/image";
 
 export const ContactForm = () => {
   const [values, setValues] = useState({
-    fname: "",
-    lname: "",
+    name: "",
     email: "",
+    company: "",
     phonenum: "",
     message: "",
   });
@@ -27,8 +29,11 @@ export const ContactForm = () => {
   console.log(values);
 
   return (
-    <section className="contact_form">
-      <div className="container mx-auto ">
+    <section className={`${styles.box} " py-5 w-full lg:w-1/2 md:w-1/3 mx-auto"`}>
+    <div
+        className="container grid md:grid-cols-2 grid-cols-1 lg:max-w-[1300px] justify-center mx-auto md:px-8 px-0 md:gap-5"
+      >
+      <div className="w-full">
         <h1
           className={`${styles.title} leading-none text-start lg:mb-2 mb-1 text-white mx-12`}
           style={PoppinsBold.style}
@@ -152,6 +157,14 @@ export const ContactForm = () => {
           </div>
         </form>
       </div>
+      <div className="md:mr-8 md:h-[100%] h-[40vh] md:mx-0 mx-4">
+            <Image
+              src={img1}
+              alt="img1"
+              className="object-cover w-full h-full mx-auto mb-4"
+            />
+      </div>
+    </div>
     </section>
   );
 };
