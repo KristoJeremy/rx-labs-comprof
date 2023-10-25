@@ -30,9 +30,9 @@ function index() {
       <div className="z-0">
         <JoinUs />
       </div>
-      {/* <div className="z-0">
+      <div className="z-0 flex items-center justify-center mt-[10vh]">
         <AnimationCard />
-      </div> */}
+      </div>
 
       {/* COMPONENT END */}
     </>
