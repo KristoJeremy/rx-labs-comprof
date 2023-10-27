@@ -1,8 +1,25 @@
+.msg_1 {
+  font-size: 24px;
+  line-height: normal;
+}
+
+.title {
+  font-size: 120px;
+  line-height: normal;
+}
+
+.msg_2 {
+  font-size: 20px;
+  line-height: normal;
+}
+
 .card {
-  width: 976px;
-  height: 530px;
-  background-color: #513f4f;
-  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  width: 996px;
+  height: 369px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #513f4f;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .heading {
@@ -19,9 +36,24 @@
 }
 
 @media (max-width: 1023px) {
+  .msg_1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .title {
+    font-size: 90px;
+    line-height: normal;
+  }
+
+  .msg_2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
   .card {
-    width: 700px;
-    height: 372px;
+    width: 800px;
+    height: 315px;
     background-color: #513f4f;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
   }
@@ -42,9 +74,23 @@
 }
 
 @media (max-width: 767px) {
+  .msg_1 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .title {
+    font-size: 70px;
+    line-height: normal;
+  }
+
+  .msg_2 {
+    font-size: 15px;
+    line-height: 17px;
+  }
   .card {
-    width: 500px;
-    height: 266px;
+    width: 600px;
+    height: 285px;
     background-color: #513f4f;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
   }
@@ -65,9 +111,23 @@
 }
 
 @media (max-width: 639px) {
+  .msg_1 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .msg_2 {
+    font-size: 13px;
+    line-height: 15px;
+  }
   .card {
-    width: 300px;
-    height: 280px;
+    width: 400px;
+    height: 251px;
     background-color: #513f4f;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
   }
@@ -88,8 +148,22 @@
 }
 
 @media (max-width: 400px) {
+  .msg_1 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .msg_2 {
+    font-size: 10px;
+    line-height: 12px;
+  }
   .card {
-    width: 250px;
+    width: 350px;
     height: 270px;
     background-color: #513f4f;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);

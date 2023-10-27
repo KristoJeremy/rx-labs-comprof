@@ -8,6 +8,7 @@ import { Hero } from "@/components/heroOffer";
 import { Footer } from "@/components/footer";
 import { SpecialOffer } from "@/components/specialOffer";
 import { OfferWebDev } from "@/components/offerWebDev";
+import { AllInOne } from "@/components/allInOne";
 
 function index() {
   const theme = createTheme({
@@ -40,8 +41,13 @@ function index() {
         </div>
         <div className="w-full md:h-[200%] sm:h-[75vh] h-[60vh] absolute bg-[#53346A] z-[-10001]"></div>
       </div>
+      <div className="mt-[200vh] relative">
+        <AllInOne />
+      </div>
 
-      <div className="sm:mt-[100vh] mt-[100vh]">{/* <Footer /> */}</div>
+      <div className="sm:mt-[100vh] mt-[100vh]">
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }
