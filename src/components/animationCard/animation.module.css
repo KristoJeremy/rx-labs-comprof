@@ -3,6 +3,13 @@
   height: 529px;
 }
 
+@media (max-width: 639px) {
+  .card_size {
+    width: 299px;
+    height: 227.5px;
+  }
+}
+
 .swiper_slide {
   /* Center slide text vertically */
   display: flex;
@@ -11,11 +18,6 @@
   width: auto !important;
 }
 
-.image {
-  border-radius: 25px;
-  height: 369.69px;
-  width: 160px;
-}
 
 .body {
   font-size: 1.6rem;
@@ -147,15 +149,20 @@
 }
 
 .image {
-  border-radius: 30px;
-  height: 100.2%;
+  height: 90%;
+  width: 100%;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 400px) {
+
+  .card_size {
+    width: 350px;
+    height: 270px;
+  }
+
   .image {
-    border-radius: 10px;
-    height: 227.5px;
-    width: 99px;
+    height: 270px;
+    width: 100%;
   }
 }
 
@@ -172,9 +179,8 @@
   }
 
   .image {
-    border-radius: 25px;
     height: 369.69px;
-    width: 160px;
+    width: fit-content;
   }
 
   .glassmorphism {
@@ -201,14 +207,13 @@
   }
 
   .card_size {
-    width: 370px;
+    width: 480px;
     height: 282.02px;
   }
 
   .image {
-    border-radius: 20px;
     height: 282.02px;
-    width: 122.05px;
+    width: 420px;
   }
 
   .glassmorphism {
