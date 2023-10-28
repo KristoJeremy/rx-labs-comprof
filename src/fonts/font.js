@@ -18,14 +18,19 @@ export const PoppinsBold = Poppins({
   display: "swap",
 });
 
+export const PoppinsLightItalic = Poppins({
+  subsets: ["latin"],
+  weight: "300",
+  display: "swap",
+  style: "italic",
+});
+
 export const LatoReguler = Lato({
   subsets: ["latin"],
   weight: "400",
-  display: "swap",
 });
 
 export const LatoBold = Lato({
   subsets: ["latin"],
   weight: "700",
-  display: "swap",
 });

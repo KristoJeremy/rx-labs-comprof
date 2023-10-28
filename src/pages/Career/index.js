@@ -3,37 +3,39 @@ import React from "react";
 //Import components
 import { NavigationBar } from "@/components/Navbar/navbar";
 import { Background } from "@/components/backgroundBlur";
-import { OurService } from "@/components/ourServices";
-import { Hero } from "@/components/hero";
-import { Footer } from "@/components/footer";
-import { ContactForm } from "@/components/Contact-us/contact";
+import { JoinUs } from "@/components/Join-us/join";
+// import { Hero } from "@/components/heroCareer";
+import { Hero } from "@/components/heroCareer";
+import { AnimationCard } from "@/components/animationCard/animationCard";
+
+
 
 function index() {
   return (
     <>
-      <div className="">
+      <div className="z-50">
         <NavigationBar />
       </div>
 
       <div>
         <Background />
       </div>
+
+
       {/* COMPONENT START */}
       <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
         <Hero />
       </div>
-      <div>
-        <OurService />
+
+      <div className="z-0">
+        <JoinUs />
       </div>
-      <div className="flex items-center justify-center mt-[10vh]">
-        <ContactForm />
+      <div className="z-0 flex items-center justify-center mt-[10vh]">
+        <AnimationCard />
       </div>
-      <div className="">
-        <Footer />
-      </div>
+
       {/* COMPONENT END */}
     </>
   );
 }
-
 export default index;
