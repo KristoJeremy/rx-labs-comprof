@@ -1,0 +1,52 @@
+/* .box {
+    height: 635px;
+    position: relative;
+    width: 1335px;
+    } */
+
+.contact {
+    background-color: #61455e;
+    box-shadow: 3px 4px 20px #00000040;
+    height: 635px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 1335px;
+    }
+.rectangle {
+    height: 635px;
+    left: 683px;
+    position: absolute;
+    top: 0;
+    width: 589px;
+    }
+
+
+.box {
+    background-color: #61455e;
+    box-shadow: 3rem 4rem 20rem #00000040;
+    left: 0;
+    top: 0;
+    width: 1335rem;
+    z-index: -1;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add more card styles as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .box {
+      flex-direction: row; /* Two cards side by side on screens wider than 768px */
+      justify-content: space-between; /* Add spacing between cards */
+    }
+    .card {
+      width: calc(50% - 0.5rem); /* Two cards side by side with spacing */
+    }
+  }
+  
