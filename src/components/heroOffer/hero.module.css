@@ -1,0 +1,53 @@
+.heading {
+  font-size: 50px;
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+@media (max-width: 1023px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 34px;
+  }
+  .paragraph {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: 639px) {
+  .heading {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 11px;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (max-width: 401px) {
+  .heading {
+    font-size: 30px;
+  }
+  .paragraph {
+    font-size: 9px;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+}
