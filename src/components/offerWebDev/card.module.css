@@ -1,0 +1,23 @@
+.card {
+  width: 1284px;
+  height: 548px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #6e3b5f 31.67%, #69596e 72.81%);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 60px;
+}
+
+.heading {
+  font-size: 40px;
+  line-height: 40px; /* 100% */
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: justify;
+}

@@ -32,13 +32,12 @@ function index() {
           <div className="absolute z-[10]  left-1/2 transform -translate-x-1/2  md:py-[12vh] sm:py-[7vh] py-[5vh]">
             <AboutWorking />
           </div>
-          <div className="w-full md:h-full sm:h-[75vh] h-[60vh] absolute bg-[#53346A] z-[-10001]"></div>
+          <div className="w-full md:h-full sm:h-[75vh] h-[60vh] absolute bg-[#553C5C] z-[-10001]"></div>
         </div>
       </div>
       <div className="sm:mt-[100vh] mt-[100vh]">
         <Footer />
       </div>
-
       <div className="z-0">
         <JoinUs />
       </div>

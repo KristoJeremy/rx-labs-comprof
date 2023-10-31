@@ -10,13 +10,21 @@ export const Hero = () => {
       <div className="container justify-center items-center lg:max-w-[1300px]">
         <div className="text-center">
           <div
-            className={`${styles.heading} text-white`}
+            className={`${styles.heading} text-white lg:w-[700px] sm:w-[550px] w-[75vw] sm:mt-[3vh] mt-[2vh] container`}
+            style={PoppinsBold.style}
+          >
+            Elevate Your Digital Experience
+          </div>
+          <div
+            className={`${styles.paragraph} sm:text-[#F4D6E5] text-[#D3BDC8] lg:w-[65vw] sm:w-[75vw] w-[75vw] container sm:mt-[30vh] mt-[10vh]`}
+
             style={PoppinsBold.style}
           >
             OFFERS
           </div>
           <div
             className={`${styles.paragraph} sm:text-[#F4D6E5] text-[#D3BDC8] lg:w-[65vw] sm:w-[75vw] w-[75vw] container mt-[2vh]`}
+
             style={LatoReguler.style}
           >
             Explore a world of customized, advanced digital solutions tailored
