@@ -10,6 +10,7 @@ import { SpecialOffer } from "@/components/specialOffer";
 import { OfferWebDev } from "@/components/offerWebDev";
 import { AllInOne } from "@/components/allInOne";
 
+
 function index() {
   const theme = createTheme({
     palette: {

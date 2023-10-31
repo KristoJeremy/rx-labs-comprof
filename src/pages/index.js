@@ -6,7 +6,7 @@ import { Background } from "@/components/backgroundBlur";
 import { OurService } from "@/components/ourServices";
 import { Hero } from "@/components/hero";
 import { Footer } from "@/components/footer";
-import { UpperSec } from "@/components/Contact-us/section";
+import { ContactForm } from "@/components/Contact-us/contact";
 
 function index() {
   return (
@@ -25,9 +25,9 @@ function index() {
       <div>
         <OurService />
       </div>
-      {/* <div className="mt-[10vh]">
-        <UpperSec />
-      </div> */}
+      <div className="flex items-center justify-center mt-[10vh]">
+        <ContactForm />
+      </div>
       <div className="">
         <Footer />
       </div>

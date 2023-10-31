@@ -66,6 +66,7 @@ export const Modal = ({ onVerify }) => {
               social media management.
             </span>
           </div>
+
           <div className="lg:mt-[100px] md:mt-[4vh] sm:mt-[8vh] mt-[4vh] mx-auto text-center">
             <button
               aria-label="Contact Us"
