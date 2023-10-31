@@ -33,7 +33,7 @@ export const CardMid = ({ Heading, Paragraph }) => {
       <div className="grid gap-[10vw]">
         <div>
           <div
-            className={`text-center text-5xl font-['Poppins'] font-bold leading-[50px] text-[#f6f4f5]`}
+            className={`text-center text-5xl font-['Poppins'] font-bold leading-[48px] text-[#f6f4f5]`}
             style={PoppinsBold.style}
           >
             {Heading}
