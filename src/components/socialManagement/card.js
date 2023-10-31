@@ -3,6 +3,9 @@ import React from "react";
 //Import css and font
 import { LatoReguler, PoppinsBold } from "@/fonts/font";
 import styles from "./card.module.css";
+import engagement from "../../../public/_offers/engagement.png";
+import Image from "next/image";
+
 
 export const Card = ({ Heading, Paragraph }) => {
   return (
@@ -39,7 +42,7 @@ export const CardBot = ({ Heading, Paragraph }) => {
             {Heading}
           </div>
           <div
-            className={`${styles.paragraph} grid grid-cols-3 gap-4 text-[#F4D6E5] sm:mt-[5vh]`}
+            className={`${styles.paragraph} grid gap-4 text-[#F4D6E5] sm:mt-[5vh]`}
             style={LatoReguler.style}
           >
             {Paragraph}
@@ -50,7 +53,7 @@ export const CardBot = ({ Heading, Paragraph }) => {
   );
 };
 
-export const CardMid = ({ Heading, Paragraph }) => {
+export const CardMid = ({ Heading, Paragraph, Paragraph2 }) => {
     return (
       <div className={`${styles.card} sm:py-[10vh] sm:px-[8vh] sm:mt-[6vh]`}>
         <div className="grid gap-[10vw]">
@@ -66,6 +69,17 @@ export const CardMid = ({ Heading, Paragraph }) => {
               style={LatoReguler.style}
             >
               {Paragraph}
+            <Image
+            src={engagement}
+            alt="img1"/>
+
+              <div className="text-justify text-xl font-['Lato'] text-[#f4d6e5] w-full">
+                • Direct Communication Beyond Transactions
+                <br />• Initiating Conversations and Responsiveness
+                <br />• Deeper Connections
+                <br />• Commitment to Improvement:
+                <br />• Trust and Reliability
+                </div>
             </div>
           </div>
         </div>

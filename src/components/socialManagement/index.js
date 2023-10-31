@@ -7,6 +7,7 @@ import { Card, CardMid, CardBot } from "./card";
 import { PoppinsBold, LatoReguler } from "@/fonts/font";
 import styles from "./card.module.css";
 
+
 export const SocialManagement = () => {
   const data1 = {
     heading: "BRAND",
@@ -14,10 +15,13 @@ export const SocialManagement = () => {
   };
   const data2 = {
     heading: "SALES & LEADS",
-    par: "Our commitment to search engine optimization goes beyond a one-time effort. We engage in a continuous optimization process, tirelessly working to elevate your website's visibility until it secures a prominent position at the pinnacle of Google search rankings.",
+    par: "Social media platforms offer far more than simply sharing pictures; they serve as a pivotal and versatile tool for effectively generating leads and driving significant sales growth. Through strategic utilization and engagement, these platforms empower businesses to tap into a vast and engaged audience, turning online presence into tangible business success.",
   };
   const data3 = {
     heading: "ENGAGEMENT",
+    par: "At the heart of our approach lies a commitment to direct and meaningful communication that extends far beyond mere transactions. We proactively initiate conversations, ensuring responsiveness to every query, fostering deeper connections with our customers. This commitment underscores our dedication to constant improvement and establishes a foundation of trust and reliability. It's through these principles that we cultivate lasting, meaningful relationships with our valued patrons.",
+    par2: "Test"
+    
     
   };
 
@@ -32,7 +36,7 @@ export const SocialManagement = () => {
         </div>
         <div className="sm:mt-[7vh]">
           <Card Heading={data1.heading} Paragraph={data1.par} />
-          <CardMid Heading={data3.heading}/>
+          <CardMid Heading={data3.heading} Paragraph={data3.par} Paragraph2={data3.par2}/>
           <CardBot Heading={data2.heading} Paragraph={data2.par} />
         </div>
       </div>
