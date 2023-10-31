@@ -1,7 +1,7 @@
 import React from "react";
 
 //Import component
-import { Card } from "./card";
+import { Card, CardMid } from "./card";
 
 //Import font and css
 import { PoppinsBold, LatoReguler } from "@/fonts/font";
@@ -16,6 +16,10 @@ export const OfferWebDev = () => {
     heading: "SEO OPTIMIZED",
     par: "Our commitment to search engine optimization goes beyond a one-time effort. We engage in a continuous optimization process, tirelessly working to elevate your website's visibility until it secures a prominent position at the pinnacle of Google search rankings.",
   };
+  const data3 = {
+    heading: "CONSULATION ABOUT YOUR SYSTEM",
+    
+  };
 
   return (
     <section id="offer-web-dev" className=" lg:mx-12">
@@ -28,6 +32,7 @@ export const OfferWebDev = () => {
         </div>
         <div className="sm:mt-[7vh]">
           <Card Heading={data1.heading} Paragraph={data1.par} />
+          <CardMid Heading={data3.heading}/>
           <Card Heading={data2.heading} Paragraph={data2.par} />
         </div>
       </div>

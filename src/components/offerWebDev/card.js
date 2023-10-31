@@ -26,3 +26,26 @@ export const Card = ({ Heading, Paragraph }) => {
     </div>
   );
 };
+
+export const CardMid = ({ Heading, Paragraph }) => {
+  return (
+    <div className={`${styles.card} sm:py-[10vh] sm:px-[8vh] sm:mt-[6vh]`}>
+      <div className="grid gap-[10vw]">
+        <div>
+          <div
+            className={`text-center text-5xl font-['Poppins'] font-bold leading-[50px] text-[#f6f4f5]`}
+            style={PoppinsBold.style}
+          >
+            {Heading}
+          </div>
+          <div
+            className={`${styles.paragraph} text-[#F4D6E5] sm:mt-[5vh]`}
+            style={LatoReguler.style}
+          >
+            {Paragraph}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
