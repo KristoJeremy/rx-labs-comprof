@@ -13,13 +13,18 @@ export const NavigationBar = () => {
   return (
     <section id="Navbar" className={styles.navbar}>
       <nav
-        className={`md:absolute py-5 transition-colors duration-500  ${
-          navbar ? "background-color: transparent" : "background-color: transparent"
+        className={`md:absolute py-5 transition-colors duration-500 ${
+          navbar
+            ? "background-color: transparent backdrop-blur-lg  "
+            : "background-color: transparent"
         } transition-colors duration-500`}
       >
         <div className="container md:px-12 md:flex md:items-center md:justify-between lg:max-w-[1300px] md:mb-0 mb-[-5px]">
-          <div className="flex items-center justify-between">
-            <div className={styles.wrapper} style={PoppinsBold.style}>
+          <div className="flex items-center justify-between md:mx-5 px-4 ">
+            <div
+              className={`${styles.wrapper} lg:mx-5`}
+              style={PoppinsBold.style}
+            >
               RXLabs
             </div>
             <span className="md:hidden block">
@@ -54,10 +59,13 @@ export const NavigationBar = () => {
               style={{
                 paddingLeft: 1,
                 marginLeft: 1,
-                right: navbar ? "0" : "-100%" 
-              } }
+                right: navbar ? "0" : "-100%",
+              }}
             >
-              <li className="pb-0 text-xl px-6 text-center md:mt-0 mt-[100px]" style={{ color: '#ebe1e6', fontSize: '14px', marginLeft: 0 }}>
+              <li
+                className="pb-0 text-xl px-6 text-center md:mt-0 mt-[100px]"
+                style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
+              >
                 <Link href="/" onClick={() => setNavbar(!navbar)}>
                   <div
                     style={PoppinsSemiBold.style}
@@ -69,31 +77,40 @@ export const NavigationBar = () => {
                   </div>
                 </Link>
               </li>
-              <li className="pb-0 text-xl px-6 text-center" style={{ color: '#ebe1e6', fontSize: '14px', marginLeft: 0 }}>
-                <Link href="/catalogue" onClick={() => setNavbar(!navbar)}>
+              <li
+                className="pb-0 text-xl px-6 text-center"
+                style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
+              >
+                <Link href="/services" onClick={() => setNavbar(!navbar)}>
                   <div
                     style={PoppinsSemiBold.style}
                     className={`${
-                      pathname === "/catalogue" ? styles.menu : ""
+                      pathname === "/services" ? styles.menu : ""
                     } ${styles.menu_hover} `}
                   >
                     SERVICES
                   </div>
                 </Link>
               </li>
-              <li className="pb-0 text-xl px-6 text-center" style={{ color: '#ebe1e6', fontSize: '14px', marginLeft: 0 }}>
-                <Link href="/gallery" onClick={() => setNavbar(!navbar)}>
+              <li
+                className="pb-0 text-xl px-6 text-center"
+                style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
+              >
+                <Link href="/Career" onClick={() => setNavbar(!navbar)}>
                   <div
                     style={PoppinsSemiBold.style}
-                    className={`${pathname === "/gallery" ? styles.menu : ""} ${
+                    className={`${pathname === "/Career" ? styles.menu : ""} ${
                       styles.menu_hover
                     } `}
                   >
-                    VALUES
+                    CAREER
                   </div>
                 </Link>
               </li>
-              <li className="pb-0 text-xl px-6 text-center" style={{ color: '#ebe1e6', fontSize: '14px', marginLeft: 0 }}>
+              <li
+                className="pb-0 text-xl px-6 text-center"
+                style={{ color: "#ebe1e6", fontSize: "14px", marginLeft: 0 }}
+              >
                 <Link href="/contact" onClick={() => setNavbar(!navbar)}>
                   <div
                     style={PoppinsSemiBold.style}
