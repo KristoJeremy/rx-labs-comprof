@@ -75,8 +75,15 @@
 
   .button {
     font-size: 14px;
-  }
-}
+    font-weight: 500;
+    left: 3.2rem;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 14px;
+    }
+
 
 @media (max-width: 640px) {
   .title {

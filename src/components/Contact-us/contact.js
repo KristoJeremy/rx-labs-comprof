@@ -147,7 +147,11 @@ export const ContactForm = () => {
               className={`${styles.button}  mx-12 text-white rounded-xl px-8 py-2 text-justify bg-[#B4862E] lg:my-6 md:my-4 my-3 hover:opacity-70`}
               style={PoppinsBold.style}
             >
-              <div className={`${styles.wrapper}`}>Send</div>
+
+            <div className={`${styles.wrapper}`}> 
+              Send
+            </div>   
+
             </button>
           </div>
         </form>
