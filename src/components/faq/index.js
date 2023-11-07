@@ -77,7 +77,7 @@ export const Faq = () => {
               }}
             >
               <div
-                className={`${styles.header_tx} ml-[4vw] sm:w-full w-[70%]`}
+                className={`${styles.header_tx} ml-[4vw] sm:w-full w-[80%]`}
                 style={PoppinsSemiBold.style}
               >
                 {item.header}
