@@ -6,8 +6,10 @@ import { Background } from "@/components/backgroundBlur";
 import { JoinUs } from "@/components/Join-us/join";
 // import { Hero } from "@/components/heroCareer";
 import { Hero } from "@/components/heroCareer";
+import { AnimationCard } from "@/components/animationCard/animationCard";
 import { Footer } from "@/components/footer";
 import { AboutWorking } from "@/components/aboutUsTeam";
+
 
 function index() {
   return (
@@ -20,9 +22,7 @@ function index() {
         <Background />
       </div>
 
-      <div className="z-0">
-        <JoinUs />
-      </div>
+
       {/* COMPONENT START */}
       <div className="sm:pt-[10rem] sm:h-[100vh] h-[60vh]">
         <Hero />
@@ -37,6 +37,12 @@ function index() {
       </div>
       <div className="sm:mt-[100vh] mt-[100vh]">
         <Footer />
+      </div>
+      <div className="z-0">
+        <JoinUs />
+      </div>
+      <div className="z-0 flex items-center justify-center mt-[10vh]">
+        <AnimationCard />
       </div>
 
       {/* COMPONENT END */}

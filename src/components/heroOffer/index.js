@@ -17,6 +17,14 @@ export const Hero = () => {
           </div>
           <div
             className={`${styles.paragraph} sm:text-[#F4D6E5] text-[#D3BDC8] lg:w-[65vw] sm:w-[75vw] w-[75vw] container sm:mt-[30vh] mt-[10vh]`}
+
+            style={PoppinsBold.style}
+          >
+            OFFERS
+          </div>
+          <div
+            className={`${styles.paragraph} sm:text-[#F4D6E5] text-[#D3BDC8] lg:w-[65vw] sm:w-[75vw] w-[75vw] container mt-[2vh]`}
+
             style={LatoReguler.style}
           >
             Explore a world of customized, advanced digital solutions tailored

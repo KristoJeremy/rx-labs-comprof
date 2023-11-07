@@ -11,6 +11,7 @@ import { OfferWebDev } from "@/components/offerWebDev";
 import { AllInOne } from "@/components/allInOne";
 import { Faq } from "@/components/faq";
 
+
 function index() {
   const theme = createTheme({
     palette: {
