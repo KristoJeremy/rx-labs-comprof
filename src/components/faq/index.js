@@ -52,14 +52,21 @@ export const Faq = () => {
         <div className={`${styles.main_header}`} style={PoppinsBold.style}>
           Have Any Questions?
         </div>
-        <div className={`${styles.main_paragraph} w-[50vw] mx-auto mb-[10vh]`}>
+        <div
+          className={`${styles.main_paragraph} lg:w-[50vw] md:w-[70vw] sm:w-[70vw] w-[75vw] mx-auto lg:mb-[10vh] md:mb-[7vh] sm:mb-[5vh] mb-[4vh] md:mt-0 sm:mt-[2vh] mt-[1vh]`}
+        >
           Are you seeking assistance with a specific project or do you have
           inquiries about our software house agency's capabilities and services?
         </div>
       </div>
       <div className="container justify-center items-center lg:max-w-[1300px]">
         {data.map((item, index) => (
-          <div key={index} className={`${styles.card}`}>
+          <div
+            key={index}
+            className={`${styles.card} ${
+              activeIndex === index ? styles.expanded : ""
+            }`}
+          >
             <div
               onClick={() => toggleDescription(index)}
               style={{
@@ -70,7 +77,7 @@ export const Faq = () => {
               }}
             >
               <div
-                className={`${styles.header_tx} ml-[4vw]`}
+                className={`${styles.header_tx} ml-[4vw] sm:w-full w-[70%]`}
                 style={PoppinsSemiBold.style}
               >
                 {item.header}
@@ -79,7 +86,17 @@ export const Faq = () => {
                 {activeIndex === index ? "+" : "-"}
               </div>
             </div>
-            {activeIndex === index && <div>{item.desc}</div>}
+            <div
+              className={`${styles.desc} md:mx-[4.7vw] sm:mx-[5vw] mx-[5.5vw]`}
+            >
+              {activeIndex === index && (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: item.desc.replace(/\n/g, "<br>"),
+                  }}
+                />
+              )}
+            </div>
           </div>
         ))}
       </div>
