@@ -1,7 +1,8 @@
 import React from "react";
 
 //Import component
-import { Card, CardMid } from "./card";
+import { Card, CardMid, CardBot } from "./card";
+import {Card1, Card2, Card3} from "@/components/socialManagement/card"
 
 //Import font and css
 import { PoppinsBold, LatoReguler } from "@/fonts/font";
@@ -32,8 +33,30 @@ export const OfferWebDev = () => {
         </div>
         <div className="sm:mt-[7vh]">
           <Card Heading={data1.heading} Paragraph={data1.par} />
+        </div>
+        <div className="sm:mt-[7vh]">
           <CardMid Heading={data3.heading}/>
-          <Card Heading={data2.heading} Paragraph={data2.par} />
+        </div>
+        <div className="sm:mt-[7vh]">
+          <CardBot Heading={data2.heading} Paragraph={data2.par} />
+        </div>
+      </div>
+
+      <div className={` mt-400 container justify-center items-center lg:max-w-[1300px]`}>
+        <div
+          className={`text-center text-[#F6F4F5] ${styles.title}`}
+          style={PoppinsBold.style}
+        >
+          SOCIAL MEDIA MANAGEMENT
+        </div>
+        <div className="sm:my-[10vh]">
+          <Card1 /> 
+        </div>
+        <div className="sm:my-[10vh]">
+          <Card2 /> 
+        </div>
+        <div className="sm:my-[10vh]">
+          <Card3 /> 
         </div>
       </div>
     </section>

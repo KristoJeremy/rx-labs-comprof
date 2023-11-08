@@ -5,6 +5,12 @@
     background: linear-gradient(180deg, #6e3b5f 31.67%, #69596e 72.81%);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
   }
+
+.card2 {
+  border-radius: 30px;
+  background: linear-gradient(180deg, #6e3b5f 31.67%, #69596e 72.81%);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
   
   .title {
     font-size: 60px;

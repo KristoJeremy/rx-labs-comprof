@@ -1,7 +1,7 @@
 import React from "react";
 
 //Import component
-import { Card, CardMid, CardBot } from "./card";
+import { Card1, Card2, Card3 } from "./card";
 
 //Import font and css
 import { PoppinsBold, LatoReguler } from "@/fonts/font";
@@ -11,7 +11,7 @@ import styles from "./card.module.css";
 export const SocialManagement = () => {
   const data1 = {
     heading: "BRAND",
-    par: "We listen to your client brief and craft designs that match your vision. Whether you're looking to create an online shop, a compelling company profile, or a versatile CMS, we've got you covered. Our web solutions are meticulously crafted to captivate your target audience, guaranteeing not only their undivided attention but also exceptional conversion rates.",
+    par: "Maintaining a consistently engaging social media presence plays a pivotal role in establishing strong brand recognition and cultivating trust among your target audience. By consistently delivering valuable content, meaningful interactions, and timely updates across various social platforms, your brand becomes a reliable and trustworthy presence in the minds of your customers, ensuring lasting positive impressions and loyalty.",
   };
   const data2 = {
     heading: "SALES & LEADS",
@@ -26,7 +26,7 @@ export const SocialManagement = () => {
   };
 
   return (
-    <section id="offer-web-dev" className=" lg:mx-12">
+    <section id="social-media-management" className=" lg:mx-12">
       <div className="container justify-center items-center lg:max-w-[1300px]">
         <div
           className={`text-center text-[#F6F4F5] ${styles.title}`}
@@ -34,10 +34,14 @@ export const SocialManagement = () => {
         >
           SOCIAL MEDIA MANAGEMENT
         </div>
-        <div className="sm:mt-[7vh]">
-          <Card Heading={data1.heading} Paragraph={data1.par} />
-          <CardMid Heading={data3.heading} Paragraph={data3.par} Paragraph2={data3.par2}/>
-          <CardBot Heading={data2.heading} Paragraph={data2.par} />
+        <div className="sm:my-[10vh]">
+          <Card1 /> 
+        </div>
+        <div className="sm:my-[10vh]">
+          <Card2 /> 
+        </div>
+        <div className="sm:my-[10vh]">
+          <Card3 /> 
         </div>
       </div>
     </section>
