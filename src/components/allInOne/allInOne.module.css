@@ -73,6 +73,15 @@
   }
 }
 
+@media (max-width: 914px) {
+  .card {
+    width: 700px;
+    height: 315px;
+    background-color: #513f4f;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (max-width: 767px) {
   .msg_1 {
     font-size: 17px;

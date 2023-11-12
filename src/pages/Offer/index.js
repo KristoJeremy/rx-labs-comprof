@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer";
 import { SpecialOffer } from "@/components/specialOffer";
 import { OfferWebDev } from "@/components/offerWebDev";
 import { AllInOne } from "@/components/allInOne";
+import { Faq } from "@/components/faq";
 
 
 function index() {
@@ -45,7 +46,9 @@ function index() {
       <div className="mt-[200vh] relative">
         <AllInOne />
       </div>
-
+      <div className="mt-[17vh]">
+        <Faq />
+      </div>
       <div className="sm:mt-[100vh] mt-[100vh]">
         <Footer />
       </div>
